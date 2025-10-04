@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Todo App</h1>
+            <p>A simple todo application built with Node.js and Express.js</p>
+        </header>
+
+        <main>
+            <form id="todoForm" class="todo-form">
+                <input 
+                    type="text" 
+                    id="todoInput" 
+                    placeholder="Add a new todo..." 
+                    required
+                >
+                <button type="submit">Add Todo</button>
+            </form>
+
+            <div class="todos-container">
+                <div class="todos-header">
+                    <h2>Your Todos</h2>
+                    <span id="todoCount">0 todos</span>
+                </div>
+                <ul id="todoList" class="todo-list"></ul>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
